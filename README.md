@@ -34,10 +34,11 @@
 ### 方式一：使用预编译的 EXE（推荐）
 
 1. 下载 ‘dist’文件夹。
-2. 运行 `install.py`。(很抱歉因为技术原因暂时无法打包成exe，如未安装python或出现问题请看2.5）
-	-2.5其他安装方法：
-	-简单模式：win+r打开运行窗口，输入shell:startup在文件夹中创建的‘WallpaperRotator.exe’的快捷方式
-	-高级模式：执行
+2. 运行 ‘install.py’。(很抱歉因为技术原因暂时无法打包成exe，如未安装python或出现问题请看3)
+3. 其他安装方法：(执行过‘2’就跳过)
+	简单模式：win+r打开运行窗口，输入shell:startup在文件夹中创建的‘WallpaperRotator.exe’的快捷方式
+	
+	高级模式：执行
    ```bash
 	schtasks /create /tn "WallpaperRotator" /tr "**替换为WallpaperRotator.exe的路径**" /sc daily /st 09:00
    ```
@@ -170,8 +171,11 @@ WallpaperRotator.exe
 
 ### 5. 如何卸载？
 
--如使用简单模式win+r打开运行窗口，输入shell:startup回车删除文件夹中的WallpaperRotator快捷方式
--如使用高级模式执行schtasks /delete /tn "WallpaperRotator" /f
+- 如使用简单模式win+r打开运行窗口，输入shell:startup回车删除文件夹中的WallpaperRotator快捷方式
+- 如使用高级模式执行
+```bash
+ schtasks /delete /tn "WallpaperRotator" /f
+```
 
 ### 6. 程序占用资源多吗？
 
