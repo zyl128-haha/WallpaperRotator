@@ -1,0 +1,16 @@
+{
+    "images_folder": "wallpapers",
+    "wallpaper_style": "fill",
+    "rotation_interval_days": 7,
+    "enable_random": false,
+    "supported_formats": [
+        ".jpg",
+        ".jpeg",
+        ".png",
+        ".bmp",
+        ".webp"
+    ],
+    "start_date": "2027-09-01",
+    "last_update": null,
+    "current_index": 0
+}
